@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festa de Formatura 2025 🎓</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Festa de Formatura 2025</h1>
+        <p>Venha celebrar essa conquista inesquecível conosco!</p>
+        <div id="countdown"></div>
+        <a href="#confirmar" class="btn">Confirmar Presença</a>
+      </div>
+    </header>
+
+    <section class="details">
+      <h2>Detalhes do Evento</h2>
+      <div class="info-grid">
+        <div>
+          <h3>📅 Data</h3>
+          <p>19 de Dezembro de 2025</p>
+        </div>
+        <div>
+          <h3>🕒 Horário</h3>
+          <p>19h00 até 03h00</p>
+        </div>
+        <div>
+          <h3>📍 Local</h3>
+          <p>Paladino Eventos - Rua Ceará 168, Vargem Alegre - Campestre MG</p>
+        </div>
+        <div>
+          <h3>🎶 Atrações</h3>
+          <p>DJ, Banda ao Vivo, Buffet completo e muita diversão!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="confirmar" class="rsvp">
+      <h2>Confirme sua presença</h2>
+      <form id="rsvpForm">
+        <input type="text" id="nome" placeholder="Seu nome completo"/>
+        <span id="erroNome" class="msgErro"></span>
+        <input type="email" id="email" placeholder="Seu e-mail"/>
+        <span id="erroEmail" class="msgErro"></span>
+
+        <label for="presenca">Você vai?</label>
+        <select id="presenca" required>
+          <option value="sim">Sim, estarei lá! 🎉</option>
+          <option value="nao">Não poderei ir 😢</option>
+        </select>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <p id="mensagem" class="mensagem"></p>
+    </section>
+
+    <footer>
+      <p>© 2025 Mateus Henrique. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
